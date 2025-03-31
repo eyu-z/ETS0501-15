@@ -48,3 +48,62 @@ count (optional): The maximum number of replacements to make.
 
 The replace() method is generally case-sensitive. "Hello" and "hello" are treated as distinct substrings.
 The method returns a new string with the replacements applied.
+
+# stripmethod
+
+ The strip() method is a powerful tool for cleaning up strings by removing unwanted characters from their beginning and end.
+ The primary purpose of strip() is to eliminate leading and trailing characters from a string.
+By default, it removes whitespace characters, including spaces, tabs (\t), and newlines (\n).
+It can also be customized to remove specific characters.
+
+string: The string you want to modify.
+[characters] (optional): A string specifying the characters to remove. If omitted, whitespace is removed.
+
+Removes from both ends: strip() affects both the beginning and end of the string.
+Does not modify the original string: It returns a new string with the specified characters removed.
+
+Character removal: If you provide a characters argument, strip() removes any characters from the beginning and end of the string that are present in that argument. The order of characters in the characters argument doesn't matter.
+
+The strip() method is very useful for cleaning up user input, data retrieved from files, or any other strings that may contain unwanted leading or trailing characters.
+
+# lstripmethod
+
+The str.lstrip() method is used to remove leading characters from a string. "Leading" means the characters at the beginning (left side) of the string.
+
+str.lstrip() creates a new string by removing characters from the left side of the original string.
+By default, if no characters are specified, it removes leading whitespace characters (spaces, tabs, newlines).
+If you provide a string of characters as an argument, it removes any of those characters that appear at the beginning of the string.
+It stops removing characters as soon as it encounters a character that is not in the specified set.
+It does not modify the original string; it returns a new, modified string.
+    The key difference between strip and lstrip is :-
+strip() removes characters from both ends of the string.
+lstrip() removes characters only from the left (beginning) of the string.
+
+# rstripmethod
+
+The str.rstrip() method is used to remove trailing characters from a string. "Trailing" means the characters at the end (right side) of the string.
+
+str.rstrip() creates a new string by removing characters from the right side of the original string.
+By default, if no characters are specified, it removes trailing whitespace characters (spaces, tabs, newlines).
+If you provide a string of characters as an argument, it removes any of those characters that appear at the end of the string.
+It stops removing characters as soon as it encounters a character that is not in the specified set.
+It does not modify the original string; it returns a new, modified string.
+        key differences 
+strip() removes characters from both ends of the string.
+lstrip() removes characters only from the left (beginning) of the string.
+rstrip() removes characters only from the right (end) of the string.
+
+# splitmethod
+
+The str.split() method is used to break a string into a list of substrings based on a specified delimiter.
+str.split() returns a list of strings, where each element in the list is a substring from the original string.
+If no delimiter is provided, it splits the string by whitespace (spaces, tabs, newlines) by default.
+If a delimiter is provided, it splits the string wherever that delimiter occurs.
+Consecutive delimiters are treated as separate splits, resulting in empty strings in the list.
+The delimiter itself is not included in the resulting list.
+
+str: The string you want to split.
+[separator] (optional): The delimiter string. If omitted, whitespace is used.
+[maxsplit] (optional): An integer specifying the maximum number of splits to perform. If omitted or -1, all possible splits are made.
+
+The str.split() method is very useful for parsing strings, extracting information, and breaking down text into manageable chunks.
