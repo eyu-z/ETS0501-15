@@ -107,3 +107,55 @@ str: The string you want to split.
 [maxsplit] (optional): An integer specifying the maximum number of splits to perform. If omitted or -1, all possible splits are made.
 
 The str.split() method is very useful for parsing strings, extracting information, and breaking down text into manageable chunks.
+
+# isalphamethod
+
+The isalpha() method is a string method that checks if all characters in a string are alphabetic.
+The isalpha() method determines whether a string consists solely of alphabetic characters (letters from a to z, both uppercase and lowercase).
+
+It returns True if all characters in the string are alphabetic.
+It returns False if the string contains any non-alphabetic characters (numbers, symbols, spaces, etc.).
+It also returns false, if the string is empty.
+
+The isalpha() method is useful for validating user input or cleaning data to ensure that strings contain only letters.
+It's important to remember that spaces and punctuation marks are not considered alphabetic characters.
+The method is useful for things like validating names, or other data entry fields that should only contain alphabetical charaters.
+
+# isdigitmethod
+
+The isdigit() method is a string method that checks if all characters in a string are digits.
+The isdigit() method determines whether a string consists entirely of digit characters (0 through 9).
+
+It returns True if all characters in the string are digits.
+It returns False if the string contains any non-digit characters (letters, symbols, spaces, etc.).
+It also returns false, if the string is empty.
+
+The isdigit() method is useful for validating user input or cleaning data to ensure that strings contain only numerical digits.
+It's important to note that spaces, decimal points, and other symbols are not considered digits.
+The method will return true for unicode digits.
+
+# isalnummethod
+
+The isalnum() method in a string method that checks if all characters in a string are alphanumeric, meaning they are either letters or digits. 
+The isalnum() method determines whether a string consists entirely of alphanumeric characters (letters a-z, A-Z, and digits 0-9).
+
+It returns True if all characters in the string are alphanumeric.
+It returns False if the string contains any non-alphanumeric characters (symbols, spaces, etc.).
+It also returns false, if the string is empty.
+
+The isalnum() method is useful for validating user input or cleaning data to ensure that strings contain only letters and/or numbers.
+It's important to remember that spaces and punctuation marks are not considered alphanumeric characters.
+This method is useful for validating user names, or other data that should only contain letters and numbers.
+
+# isspacemethod
+
+The isspace() method is a string method that checks if all characters in a string are whitespace characters. 
+The isspace() method determines whether a string consists entirely of whitespace characters. Whitespace characters include spaces, tabs (\t), newlines (\n), carriage returns (\r), vertical tabs (\v), and form feeds (\f).
+
+It returns True if all characters in the string are whitespace characters.
+It returns False if the string contains any non-whitespace characters.
+It returns false if the string is empty.
+
+The isspace() method is useful for validating user input or cleaning data to ensure that strings contain only whitespace characters.
+It's important to remember that this method checks for any whitespace character, not just spaces.
+This is useful for things like checking if a user has entered only blank data into a form field.
