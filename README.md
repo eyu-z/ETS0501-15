@@ -237,3 +237,4 @@ Non-cased characters are ignored. Digits (0-9), symbols (!@#$, etc.), whitespace
 Locale-dependent: The definition of uppercase can be locale-dependent, but in most common usage, it refers to the standard uppercase letters of the alphabet.
 
 isupper() is a straightforward method for checking if all alphabetic characters within a string are in uppercase. Remember that non-alphabetic characters are ignored during this check.
+
